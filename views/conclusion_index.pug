@@ -1,0 +1,27 @@
+html
+	head
+		title CVR | Conclusiones
+		meta(charset="UTF-8")
+		link(href="/css/conclusiones-display.css", rel="stylesheet", type="text/css")
+		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", type="text/css")
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans|Trocchi", rel="stylesheet")
+	body
+		div(class="container")
+			div(class="header-box")
+				h1 Conclusiones del Informe Final de la CVR
+			div(class="index-box")
+				each val, index in data
+					h3= index + '. ' + val.titulo
+					if val.range
+						ul
+							each item in val.range
+								li
+									a(href='/'+item)= item
+					if val.subsecciones
+						each key, index in val.subsecciones
+							h4= index + '. ' + key.titulo
+							if key.range
+								ul
+									each item in key.range
+										li
+											a(href='/'+item)= item

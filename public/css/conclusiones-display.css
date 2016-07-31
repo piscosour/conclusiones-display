@@ -1,0 +1,47 @@
+p.main {
+	font-family: 'Trocchi', serif;
+	font-size: 2.0em;
+	line-height: 1.7em;
+}
+
+p.sub {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.content-box {
+	margin-top: 10vh;
+}
+
+.header-box {
+	text-align: center;
+	margin-top: 10vh;
+}
+
+.header-box h1 {
+	font-family: 'Trocchi', serif;
+	font-size: 3.0em;
+}
+
+.index-box {
+	text-align: center;
+	margin-bottom: 10vh;
+}
+
+.index-box h2, h3, h4 {
+	font-family: 'Trocchi', serif !important;
+	margin-top: 30px !important;
+	margin-bottom: 10px !important;
+}
+
+.index-box p, li {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.index-box ul {
+	list-style-type: none;
+}
+
+.index-box li {
+	display: inline;
+	margin-right: 10px;
+}
